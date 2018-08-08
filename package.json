@@ -1,0 +1,49 @@
+{
+    "name": "unnamed-app",
+    "version": "0.1.0",
+    "author": "unnamed-author",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev": "webpack-dev-server --mode=development",
+        "dist": "webpack"
+    },
+    "dependencies": {
+        "@blueprintjs/core": "^3.2.0",
+        "classnames": "^2.2.5",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "react-transition-group": "^2.4.0",
+        "webpack-cli": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.3",
+        "@types/react": "^16.0.36",
+        "@types/react-dom": "^16.0.3",
+        "copy-webpack-plugin": "^4.5.2",
+        "scss-loader": "^0.0.1",
+        "stylelint": "^9.4.0",
+        "stylelint-config-palantir": "^3.1.0",
+        "stylelint-order": "^0.8.1",
+        "stylelint-scss": "^3.2.0",
+        "ts-loader": "^4.4.2",
+        "tslint": "^5.11.0",
+        "tslint-react": "^3.6.0",
+        "typescript": "^3.0.1",
+        "webpack": "^4.16.5",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "stylelint": {
+        "extends": [
+            "stylelint-config-palantir",
+            "stylelint-config-palantir/sass.js"
+        ],
+        "plugins": [
+            "stylelint-order"
+        ],
+        "rules": {
+            "max-nesting-depth": 2,
+            "order/properties-alphabetical-order": true
+        }
+    }
+}

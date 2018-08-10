@@ -2,7 +2,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path              = require("path");
 
 module.exports = {
-    entry: "./src/index.ts",
+    entry: "./src/index.tsx",
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         host: "0.0.0.0",

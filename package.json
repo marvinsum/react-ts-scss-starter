@@ -21,7 +21,11 @@
         "@types/react": "^16.0.36",
         "@types/react-dom": "^16.0.3",
         "copy-webpack-plugin": "^4.5.2",
+        "css-loader": "^1.0.0",
+        "node-sass": "^4.9.3",
+        "sass-loader": "^7.1.0",
         "scss-loader": "^0.0.1",
+        "style-loader": "^0.22.1",
         "stylelint": "^9.4.0",
         "stylelint-config-palantir": "^3.1.0",
         "stylelint-order": "^0.8.1",
@@ -38,12 +42,16 @@
             "stylelint-config-palantir",
             "stylelint-config-palantir/sass.js"
         ],
+        "ignoreFiles": [
+            "**/*.tsx"
+        ],
         "plugins": [
             "stylelint-order"
         ],
         "rules": {
             "max-nesting-depth": 2,
-            "order/properties-alphabetical-order": true
+            "order/properties-alphabetical-order": true,
+            "order/properties-order": null
         }
     }
 }
